@@ -16,7 +16,6 @@ from django.core.exceptions import ImproperlyConfigured
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-'''models 에서도 타임존을 따르게 되므로 모든곳에서 타임존을 따르게 된다.'''
 TIME_ZONE = 'Asia/Seoul'
 
 USE_TZ = False
@@ -46,7 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    '''장고 어플리케이션을 생성했으면 장고 프로젝트에 새롭게 생성한 어플리케이션을 등록한다.'''
     'accountapp',
 ]
 
